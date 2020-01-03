@@ -1,0 +1,209 @@
+* {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*GENERELT*/
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 150px;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+
+/*GENERELT SLUT*/
+
+
+/* HEADER*/
+
+.logo {
+    position: relative;
+    height: 28px;
+    width: 43px;
+    background-image: url(ui_elementer/logo.svg);
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.nav_links li {
+    list-style: none;
+}
+
+.nav_links a {
+    color: black;
+    text-decoration: none;
+}
+
+.burger_menu {
+    background-image: url(ui_elementer/burger_icon.svg);
+    width: 28px;
+    height: 21px;
+    display: none;
+}
+
+/* HEADER SLUT*/
+
+
+
+
+/*FOOTER*/
+
+.footer_logo {
+    background-image: url(ui_elementer/footer.svg);
+    width: 100vw;
+    height: 3.2vw;
+    bottom: 10px;
+    position: fixed;
+    background-size: cover;
+}
+
+/*FOOTER SLUT*/
+
+
+
+/*FORSIDE*/
+
+/*afprøv snenere*/
+.logo_hide {
+    display: none;
+}
+
+/*afprøv senere*/
+
+/*FORSIDE SLUT*/
+
+
+
+/*OM*/
+
+
+
+
+/*OM SLUT*/
+
+
+/*OVERSIGT*/
+/*OVERSIGT SLUT*/
+
+
+
+/*02*/
+
+.watercolor_02 {
+    background-image: url(ui_elementer/02_headline.svg);
+    width: 300px;
+    height: 120px;
+    background-size: cover;
+}
+
+/*02 SLUT*/
+
+/*03*/
+/*03 SLUT*/
+
+/*04*/
+/*04 SLUT*/
+
+
+/*05*/
+/*05 SLUT*/
+
+
+/*mediaquery*/
+
+
+/*mediaquery mobile version*/
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        overflow: hidden;
+    }
+
+    .nav_links {
+        position: absolute;
+        right: 0px;
+        height: 40vh;
+        top: 8vh;
+        background-color: rgba(255, 255, 255, 0.49);
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        padding-right: 8px;
+        width: 50%;
+        transform: translateY(-140%);
+
+    }
+
+    .nav_links li {}
+
+    .burger_menu {
+        display: block;
+        margin-right: 5px;
+    }
+
+
+    nav {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+
+
+    .logo {
+        margin-left: 5px;
+        display: block;
+    }
+
+
+    .footer_logo {
+        width: 400vw;
+        height: 13vw;
+        background-size: cover;
+        margin-left: -148%;
+    }
+
+    .watercolor_02 {
+        width: 190vw;
+        height: 76vw;
+        background-size: cover;
+        margin-left: -45%;
+    }
+
+}
+
+.nav_active {
+    transform: translateY(0%);
+    transition: transform 0.9s ease-in;
+}
+
+/*mediaquery computer version*/
