@@ -17,15 +17,48 @@ h1 {
 
 h3 {
     font-family: 'Cabin', sans-serif;
-    font-size: 25px;
+    font-size: 22px;
+    margin-left: 4.5rem;
 }
 
 h4 {
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 18px;
+    margin-left: 4.5rem;
 }
 
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    font-weight: medium;
+    margin-top: 0;
+}
+
+.img {}
+
+.contentwrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 1rem;
+    padding-bottom: 10vw;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.col_txt {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin-right: 2rem;
+}
+
+.col_img {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin-left: 2rem;
+}
 
 /*GENERELT SLUT*/
 
@@ -118,16 +151,64 @@ nav {
 
 /*02*/
 
-.watercolor_02 {
-    background-image: url(ui_elementer/02_headline.svg);
+.waterwrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10vw;
+    margin-bottom: 20vw;
+}
+
+.watercolor_headline {
     width: 300px;
     height: 120px;
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gotosite_btn {
+    width: 233px;
+    height: 111px;
+    margin-bottom: 10vw;
     background-size: cover;
 }
+
+
+#tema02 .image {
+    background-image: url(content_pictures/content_individuelle_sites/dekonstruktivisme.png);
+    height: 39vw;
+    background-size: cover;
+}
+
+
+
 
 /*02 SLUT*/
 
 /*03*/
+
+#tema03 .image1 {
+    background-image: url(content_pictures/content_individuelle_sites/espressohouse.png);
+    height: 39vw;
+    background-size: cover;
+}
+
+#tema03 .image2 {
+    background-image: url(content_pictures/content_individuelle_sites/fruit_prototype.png);
+    height: 39vw;
+    background-size: cover;
+}
+
+#tema03 .image3 {
+    background-image: url(content_pictures/content_individuelle_sites/Sk%C3%A6rmbillede%202020-01-04%20kl.%2022.59.49.png);
+    height: 39vw;
+    background-size: cover;
+}
+
 /*03 SLUT*/
 
 /*04*/
@@ -145,20 +226,27 @@ nav {
 
 @media only screen and (max-width: 600px) {
 
-    body {
-        overflow: hidden;
+
+    h3 {
+        margin-left: 1.4rem;
     }
+
+    h4 {
+        margin-left: 1.4rem;
+    }
+
 
     .nav_links {
         position: absolute;
         right: 0px;
         height: 40vh;
         top: 8vh;
-        background-color: rgba(255, 255, 255, 0.49);
+        background-color: rgba(255, 255, 255, 0.71);
         display: flex;
         flex-direction: column;
         text-align: right;
         padding-right: 8px;
+        padding-bottom: 2rem;
         width: 50%;
         transform: translateY(-140%);
 
@@ -192,13 +280,38 @@ nav {
         margin-left: -148%;
     }
 
-    .watercolor_02 {
-        width: 190vw;
-        height: 76vw;
-        background-size: cover;
-        margin-left: -45%;
+    .watercolor_headline {
+        width: 150vw;
+        height: 60vw;
     }
 
+
+    .contentwrapper {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .col_txt {
+        margin-right: 0;
+        margin-right: 2rem;
+    }
+
+    .col_img {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+
+    .btn_wrapper {
+        margin-bottom: 20vw;
+        margin-top: 10vw;
+    }
+
+    .image {
+        width: 90vw;
+        height: 80%;
+    }
 }
 
 .nav_active {
