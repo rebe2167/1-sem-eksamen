@@ -36,7 +36,16 @@ p {
     margin-top: 0;
 }
 
-.img {}
+a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-decoration: none;
+    color: #b9b7b7;
+    margin: 1vw;
+}
+
+
 
 .contentwrapper {
     display: flex;
@@ -58,6 +67,20 @@ p {
     flex-grow: 1;
     flex-basis: 500px;
     margin-left: 2rem;
+}
+
+.gotosite_btn {
+    width: 233px;
+    height: 111px;
+    margin-bottom: 10vw;
+    background-size: cover;
+}
+
+.dokumentations_btn {
+    width: 233px;
+    height: 111px;
+    margin-bottom: 10vw;
+    background-size: cover;
 }
 
 /*GENERELT SLUT*/
@@ -106,6 +129,34 @@ nav {
 /* HEADER SLUT*/
 
 
+/*BREADCRUM*/
+.breadcrum {
+    color: #b9b7b7;
+    padding-top: 5vw;
+    padding-left: 6vw;
+
+}
+
+.breadcrum a:hover {
+    color: #5D5D5D;
+}
+
+.breadcrum {
+    color: #b9b7b7;
+    padding-top: 5vw;
+    padding-left: 6vw;
+
+}
+
+.breadcrum a:hover {
+    color: #5D5D5D;
+}
+
+.breadcrum .active {
+    font-weight: medium;
+}
+
+/*BREADCRUM SLUT*/
 
 
 /*FOOTER*/
@@ -145,6 +196,61 @@ nav {
 
 
 /*OVERSIGT*/
+
+.watercolor_background {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    z-index: -1;
+}
+
+.oversigt_wrapper {
+    display: flex;
+    padding: 1rem;
+    margin-bottom: 60vw;
+    justify-content: space-around;
+
+}
+
+.content_kategori1 {
+
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin-left: 18vw;
+
+}
+
+.content_kategori2 {
+
+    flex-grow: 1;
+    flex-basis: 500px;
+
+}
+
+.kategori_nr2 {
+    height: 60%;
+    width: 60%;
+
+}
+
+.kategori_nr3 {
+    height: 60%;
+    width: 60%;
+}
+
+
+.kategori_nr4 {
+    height: 60%;
+    width: 60%;
+}
+
+.kategori_nr5 {
+    height: 60%;
+    width: 60%;
+}
+
+
+
 /*OVERSIGT SLUT*/
 
 
@@ -170,12 +276,6 @@ nav {
     width: 100%;
 }
 
-.gotosite_btn {
-    width: 233px;
-    height: 111px;
-    margin-bottom: 10vw;
-    background-size: cover;
-}
 
 
 #tema02 .image {
@@ -212,10 +312,48 @@ nav {
 /*03 SLUT*/
 
 /*04*/
+
+#tema04 .image1 {
+    background-image: url(content_pictures/content_individuelle_sites/game_screenshot.png);
+    height: 50vw;
+    background-size: cover;
+}
+
+#tema04 .image2 {
+    background-image: url(content_pictures/content_individuelle_sites/sexogsamfund_spil.png);
+    height: 50vw;
+    background-size: cover;
+}
+
+#tema04 .btn_wrapper {
+    display: flex;
+    align-content: space-between;
+}
+
+.assetliste_btn {
+    width: 233px;
+    height: 111px;
+    margin-bottom: 10vw;
+    background-size: cover;
+}
+
 /*04 SLUT*/
 
 
 /*05*/
+
+#tema05 .image1 {
+    background-image: url(content_pictures/content_individuelle_sites/IMG_7682.png);
+    height: 50vw;
+    background-size: cover;
+}
+
+#tema05 .image2 {
+    background-image: url(content_pictures/content_individuelle_sites/handler.png);
+    height: 40vw;
+    background-size: cover;
+}
+
 /*05 SLUT*/
 
 
@@ -311,6 +449,13 @@ nav {
     .image {
         width: 90vw;
         height: 80%;
+    }
+
+
+    #tema04 .btn_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
