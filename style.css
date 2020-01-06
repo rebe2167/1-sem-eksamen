@@ -199,54 +199,72 @@ nav {
 
 .watercolor_background {
     position: relative;
-    height: 90%;
-    width: 90%;
+    margin-left: 32vw;
+    height: 40%;
+    width: 40%;
     z-index: -1;
+    margin-top: 8vw;
+
 }
 
 .oversigt_wrapper {
     display: flex;
     padding: 1rem;
     margin-bottom: 60vw;
-    justify-content: space-around;
+    margin-top: -61vw;
+    padding: 0 20vw;
+    padding-left: 28vw;
 
 }
+
 
 .content_kategori1 {
 
     flex-grow: 1;
     flex-basis: 500px;
-    margin-left: 18vw;
-
+    margin-left: 0vw;
+    border-right: solid;
+    margin-right: 3vw;
+    border-width: 1.5px;
+    border-right-color: #707070;
 }
 
 .content_kategori2 {
 
     flex-grow: 1;
-    flex-basis: 500px;
+    flex-basis: 550px;
+    padding-left: 5vw;
+    height: 66vw;
+
 
 }
 
 .kategori_nr2 {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
+    margin-top: 3vw;
 
 }
 
 .kategori_nr3 {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
+    margin-top: 14vw;
+
 }
 
 
 .kategori_nr4 {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
+    margin-top: -18vw;
 }
 
 .kategori_nr5 {
-    height: 60%;
-    width: 60%;
+    height: 70%;
+    width: 70%;
+    margin-top: -20vw;
+
 }
 
 
