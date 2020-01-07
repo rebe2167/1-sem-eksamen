@@ -70,20 +70,55 @@ a {
 }
 
 .gotosite_btn {
-    width: 233px;
+    width: 290px;
     height: 111px;
     margin-bottom: 10vw;
     background-size: cover;
 }
 
 .dokumentations_btn {
-    width: 233px;
+    width: 290px;
     height: 111px;
     margin-bottom: 10vw;
     background-size: cover;
 }
 
+figcaption {
+    margin-top: 41vw;
+    margin-left: -4.2vw;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #707070;
+}
+
 /*GENERELT SLUT*/
+
+/*ANIMATIONER*/
+
+.mouse_zoom {
+    animation-name: bigger_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+
+@keyframes bigger_kf {
+    0% {
+        transform: scale(1);
+    }
+
+
+    100% {
+        transform: scale(1.1);
+    }
+
+
+}
+
+/*ANIMATIONER SLUT*/
+
 
 
 /* HEADER*/
@@ -92,7 +127,6 @@ a {
     position: relative;
     height: 28px;
     width: 43px;
-    background-image: url(ui_elementer/logo.svg);
     display: none;
 }
 
@@ -102,6 +136,15 @@ nav {
     align-items: center;
     min-height: 8vh;
     font-family: 'Quicksand', sans-serif;
+}
+
+nav a {
+    font-size: 18px;
+}
+
+nav a:hover {
+    font-size: 19px;
+    color: #707070;
 }
 
 .nav_links {
@@ -176,12 +219,59 @@ nav {
 
 /*FORSIDE*/
 
-/*afprøv snenere*/
-.logo_hide {
-    display: none;
+
+
+.forside_logo {
+    height: 100%;
+    width: 100%;
+    margin-top: 1vw;
 }
 
-/*afprøv senere*/
+.splash_pic {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 4vw;
+    z-index: -1;
+    margin-top: -39vw;
+
+}
+
+.forside_line {
+    display: flex;
+    margin-left: 29vw;
+    border-bottom-color: #b9b7b7;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 40vw;
+    margin-top: 2vw;
+}
+
+.nav_forside_links a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav_forside_links a:hover {
+    font-size: 22px;
+    color: #707070;
+}
+
+.nav_forside_links li {
+    list-style: none;
+    margin-bottom: 3vw;
+}
+
+.nav_oversigt_txt {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: -15vw;
+}
+
+.nav_oversigt_wrapper {
+    display: none;
+}
 
 /*FORSIDE SLUT*/
 
@@ -189,8 +279,34 @@ nav {
 
 /*OM*/
 
+#om .watercolor_headline {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
 
+.om_contentwrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
 
+}
+
+.om_pic {
+    flex-basis: 300px;
+    width: 10vw;
+    background-size: cover;
+    background-image: url(content_pictures/om_billede/IMG_5042-2.jpg);
+
+}
+
+.om_txt {
+    flex-basis: 400px;
+    padding-left: 4vw;
+    margin-top: 0;
+}
 
 /*OM SLUT*/
 
@@ -333,13 +449,13 @@ nav {
 
 #tema04 .image1 {
     background-image: url(content_pictures/content_individuelle_sites/game_screenshot.png);
-    height: 50vw;
+    height: 39vw;
     background-size: cover;
 }
 
 #tema04 .image2 {
     background-image: url(content_pictures/content_individuelle_sites/sexogsamfund_spil.png);
-    height: 50vw;
+    height: 39vw;
     background-size: cover;
 }
 
@@ -349,7 +465,7 @@ nav {
 }
 
 .assetliste_btn {
-    width: 233px;
+    width: 290px;
     height: 111px;
     margin-bottom: 10vw;
     background-size: cover;
@@ -362,7 +478,7 @@ nav {
 
 #tema05 .image1 {
     background-image: url(content_pictures/content_individuelle_sites/IMG_7682.png);
-    height: 50vw;
+    height: 40vw;
     background-size: cover;
 }
 
@@ -392,6 +508,11 @@ nav {
     }
 
 
+    header {
+        margin-bottom: 13vw;
+    }
+
+
     .nav_links {
         position: absolute;
         right: 0px;
@@ -408,7 +529,6 @@ nav {
 
     }
 
-    .nav_links li {}
 
     .burger_menu {
         display: block;
@@ -436,6 +556,12 @@ nav {
         margin-left: -148%;
     }
 
+
+    figcaption {
+        margin-top: 103vw;
+        margin-left: -12.2vw;
+    }
+
     .watercolor_headline {
         width: 150vw;
         height: 60vw;
@@ -450,12 +576,13 @@ nav {
 
     .col_txt {
         margin-right: 0;
-        margin-right: 2rem;
+        margin-right: 0;
     }
 
     .col_img {
         margin-left: 0;
-        margin-right: 2rem;
+        margin-right: 0;
+        flex-basis: 320px;
     }
 
 
@@ -475,6 +602,112 @@ nav {
         flex-direction: column;
         align-items: center;
     }
+
+    #tema05 h3 {
+        margin-top: 34vw;
+    }
+
+    .om_contentwrapper {
+        flex-direction: column;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    #om .watercolor_headline {
+        margin-top: -5vw;
+        margin-bottom: -5vw;
+    }
+
+    .om_pic {
+        width: 63vw;
+        margin-left: 15vw;
+    }
+
+
+    .om_txt {
+        padding: 4vw;
+        margin-top: 8vw;
+    }
+
+    .forside_logo {
+        height: 250%;
+        width: 250%;
+        margin-left: -77vw;
+        margin-top: -13vw;
+    }
+
+
+    .splash_pic {
+        height: 250%;
+        width: 250%;
+        margin-left: -77vw;
+        margin-top: -97vw;
+    }
+
+    .nav_oversigt_wrapper {
+        display: block;
+    }
+
+    #oversigt .watercolor_background {
+        height: 150%;
+        width: 150%;
+        margin-left: -41vw;
+        margin-top: -6vw;
+    }
+
+    .oversigt_wrapper {
+        margin-top: -182vw;
+        padding: 0;
+        margin-left: 6vw;
+
+    }
+
+    .content_kategori1 {
+        flex-grow: 1;
+        flex-basis: 500px;
+        margin-left: 0vw;
+        border-right: solid;
+        margin-right: 3vw;
+        border-width: 1.5px;
+        border-right-color: #707070;
+    }
+
+    .content_kategori2 {
+        flex-grow: 1;
+        flex-basis: 500px;
+        padding-left: 5vw;
+        height: 85vw;
+    }
+
+    .kategori_nr2 {
+        height: 90%;
+        width: 90%;
+        margin-top: -15vw;
+    }
+
+    .kategori_nr4 {
+        height: 90%;
+        width: 90%;
+        margin-top: -18vw;
+    }
+
+    .kategori_nr3 {
+        height: 90%;
+        width: 90%;
+        margin-top: 22vw;
+    }
+
+
+    .kategori_nr5 {
+        height: 90%;
+        width: 90%;
+        margin-top: -20vw;
+    }
+
+    .oversigt_footer {
+        display: none;
+    }
+
 }
 
 .nav_active {
