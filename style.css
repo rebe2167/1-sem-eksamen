@@ -18,14 +18,14 @@ h1 {
 h3 {
     font-family: 'Cabin', sans-serif;
     font-size: 22px;
-    margin-left: 4.5rem;
+    margin-left: 5.5rem;
 }
 
 h4 {
     font-family: 'Quicksand', sans-serif;
     font-weight: normal;
     font-size: 18px;
-    margin-left: 4.5rem;
+    margin-left: 5.5rem;
 }
 
 
@@ -85,7 +85,7 @@ a {
 
 figcaption {
     margin-top: 41vw;
-    margin-left: -4.2vw;
+    margin-left: -3.2vw;
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     font-weight: lighter;
@@ -97,25 +97,30 @@ figcaption {
 /*ANIMATIONER*/
 
 .mouse_zoom {
-    animation-name: bigger_kf;
-    animation-duration: 1s;
+    animation-name: zoomin;
+    animation-duration: 6s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: both;
 }
 
-@keyframes bigger_kf {
+
+@-webkit-keyframes zoomin {
     0% {
         transform: scale(1);
     }
 
-
-    100% {
-        transform: scale(1.1);
+    50% {
+        transform: scale(1.5);
     }
 
-
+    100% {
+        transform: scale(1);
+    }
 }
+
+
+
 
 /*ANIMATIONER SLUT*/
 
@@ -222,9 +227,10 @@ nav a:hover {
 
 
 .forside_logo {
-    height: 100%;
-    width: 100%;
-    margin-top: 1vw;
+    height: 40%;
+    width: 40%;
+    margin-left: 30vw;
+    margin-top: 4vw;
 }
 
 .splash_pic {
@@ -233,7 +239,7 @@ nav a:hover {
     width: 100%;
     margin-top: 4vw;
     z-index: -1;
-    margin-top: -39vw;
+    margin-top: -32vw;
 
 }
 
@@ -295,7 +301,7 @@ nav a:hover {
 }
 
 .om_pic {
-    flex-basis: 300px;
+    flex-basis: 251px;
     width: 10vw;
     background-size: cover;
     background-image: url(content_pictures/om_billede/IMG_5042-2.jpg);
@@ -303,7 +309,7 @@ nav a:hover {
 }
 
 .om_txt {
-    flex-basis: 400px;
+    flex-basis: 303px;
     padding-left: 4vw;
     margin-top: 0;
 }
@@ -396,11 +402,11 @@ nav a:hover {
     justify-content: center;
     width: 100%;
     margin-top: 10vw;
-    margin-bottom: 20vw;
+    margin-bottom: 11vw;
 }
 
 .watercolor_headline {
-    width: 300px;
+    width: 410px;
     height: 120px;
 }
 
@@ -486,6 +492,11 @@ nav a:hover {
     background-image: url(content_pictures/content_individuelle_sites/handler.png);
     height: 40vw;
     background-size: cover;
+}
+
+video {
+    width: 100%;
+    height: 100%;
 }
 
 /*05 SLUT*/
@@ -588,7 +599,7 @@ nav a:hover {
 
     .btn_wrapper {
         margin-bottom: 20vw;
-        margin-top: 10vw;
+        margin-top: 20vw;
     }
 
     .image {
@@ -601,6 +612,18 @@ nav a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #tema05 .btn_wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col_video {
+        width: 100%;
+        height: 100%;
+
     }
 
     #tema05 h3 {
@@ -630,18 +653,18 @@ nav a:hover {
     }
 
     .forside_logo {
-        height: 250%;
-        width: 250%;
-        margin-left: -77vw;
-        margin-top: -13vw;
+        height: 90%;
+        width: 90%;
+        margin-left: 5vw;
+        margin-top: -5vw;
     }
 
 
     .splash_pic {
-        height: 250%;
-        width: 250%;
+        height: 280%;
+        width: 280%;
         margin-left: -77vw;
-        margin-top: -97vw;
+        margin-top: -82vw;
     }
 
     .nav_oversigt_wrapper {

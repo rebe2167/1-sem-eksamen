@@ -22,7 +22,7 @@ function mouseOverForside() {
     console.log("mouseOverForside");
 
     document.querySelector(".splash_pic").classList.add("mouse_zoom");
-    document.querySelector(".splash_pic").addEventListener("mouseout", mouseOutForside);
+    document.querySelector(".forside_logo").addEventListener("mouseout", mouseOutForside);
 }
 
 function mouseOutForside() {
